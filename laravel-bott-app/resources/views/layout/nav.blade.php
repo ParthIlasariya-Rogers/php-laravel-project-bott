@@ -23,9 +23,10 @@
     <style>
 
     </style>
-
+    
     @stack('styles')
 </head>
+
 
 <body>
     <header class="header">

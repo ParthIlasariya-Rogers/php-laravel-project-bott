@@ -34,15 +34,5 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body>
-    <div id="app">
-        <h1>Welcome to BOTT Test App</h1>
-    </div>
-    <main>
-        <p><?php echo $content; ?></p>
-    </main>
-
-    <script src="js/app.js"></script>
-</body>
 
 </html>

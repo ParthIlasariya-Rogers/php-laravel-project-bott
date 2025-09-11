@@ -11,6 +11,10 @@
 </head>
 
 <body>
+
+
+    @include('layout.nav') <!-- Including Navbar -->
+
     @section('header') <!-- Pointing to Header Section -->
     This is the master header.
     @show
