@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.layout')
 
 @section('title', 'Home Page')
 
@@ -6,6 +6,8 @@
     <h2>Welcome to the Home Page</h2>
     
 @endsection
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
