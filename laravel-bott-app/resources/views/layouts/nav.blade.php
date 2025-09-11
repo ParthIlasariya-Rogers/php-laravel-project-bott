@@ -3,28 +3,30 @@
 @section('title', 'Home Page')
 
 @section('content')
-    <h2>Welcome to the Home Page</h2>
-    
+<h2>Welcome to the Home Page</h2>
+
 @endsection
 
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+
     <!-- Styles Have been saved to app.css -->
     <style>
-        
+
     </style>
-    
+
     @stack('styles')
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
@@ -36,7 +38,7 @@
                 <a href="{{ url('/about') }}">About</a>
                 <a href="{{ url('/contact') }}">Contact</a>
                 @auth
-                    <a href="{{ url('/dashboard') }}">Dashboard</a>
+                <a href="{{ url('/dashboard') }}">Dashboard</a>
                 @endauth
             </nav>
         </div>
@@ -61,4 +63,5 @@
 
     @stack('scripts')
 </body>
+
 </html>
