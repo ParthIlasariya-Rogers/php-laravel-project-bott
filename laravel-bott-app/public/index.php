@@ -2,6 +2,9 @@
 
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\support\ServiceProvider;
+
 
 define('LARAVEL_START', microtime(true));
 
@@ -33,6 +36,12 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
     <div id="app">
         <h1>Welcome to BOTT Test App</h1>
     </div>
+     <main>
+            <p><?php echo $content; ?></p>
+        </main>
+        <footer>
+            <p>&copy; <?php echo date('Y'); ?> Rogers</p>
+        </footer>
     <script src="js/app.js"></script>
 </body>
 </html>

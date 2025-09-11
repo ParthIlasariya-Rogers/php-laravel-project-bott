@@ -1,3 +1,11 @@
+@extends('layouts.main')
+
+@section('title', 'Home Page')
+
+@section('content')
+    <h2>Welcome to the Home Page</h2>
+    
+@endsection
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -8,7 +16,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
+    <!-- Styles Have been saved to app.css -->
     <style>
         
     </style>
